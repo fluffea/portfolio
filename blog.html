@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a class="active" href="">blog</a></li>
+            <li><a href="stream.html">stream</a></li>
+            <li><a href="">about me</a></li>
+            <li><a href="">contact me</a></li>
+        </ul>
+    </div>
+
+    <div class="blog">
+        <div class="leftbar">
+            <div id="entry1" class="card">
+                <h2>Meaning of Life Through Action: Dostoevsky’s Notes from the Underground — Ideas that Threatens the Party’s Ideology, a Request from the Auditing Team</h2>
+                <h4>Excerpts from ENG110, 12/18/2019</h4>
+                <!-- <img src="https://via.placeholder.com/600x200"> -->
+                <p>Loyalty to the Party! Dostoevsky’s Notes from the Underground pose a serious threat to the Party ideology of an oligarchical collective of socialist doublethink due to three main ideologies the book discusses, which are: the freedom to fight for anything and everything, the loneliness of humanity, and the ability to create meaning through your actions. The Party shall not be undermined by such book that promotes ideas that goes against the Party’s ideologies and threatens the potential security of the Nation.</p>
+                <button class="button" id="button1">Read More...</button>
+            </div>
+
+            <div id="entry2" class="card">
+                <h2>Favorite Red Velvet Joy Fancams</h2>
+                <h4>Red Velvet, 12/17/2019</h4>
+                <!-- <img src="https://via.placeholder.com/600x200"> -->
+                <p>'Zimzalabim' ZIP.CODE:SEOUL</p>
+                <p>'Umpah Umpah' MBC Fan Cam</p>
+                <button class="button" id="button2">Read More...</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="card">
+                <h2>Recent Blogs</h2>
+                <a class="entries" href="#entry1">Test 1 Heading</a>
+                <br />
+                <a class="entries" href="#entry2">Test 2 Heading</a>
+            </div>
+            <div class="card">
+                <h2>Popular Blogs</h2>
+                <a class="entries" href="#entry1">Test 1 Heading</a>
+            </div>
+            <div class="card">
+                <h2>Categories</h2>
+                <a class="entries" href="">Excerpts from ENG110</a>
+            </div>
+        </div>
+
+
+        <div id="modal1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close1">&times;</span>
+                <h2>Test 1 Heading</h2>
+                <h5>Subtitle, 12/18/2019</h5>
+                <p>===============================</p>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close2">&times;</span>
+                <h2>Favorite Red Velvet Joy Fancams</h2>
+                <h5>Red Velvet, 12/17/2019</h5>
+                <p>'Zimzalabim' ZIP.CODE:SEOUL</p>
+                <video width="216" height="384" controls>
+                    <source src="Assets\JoyFancam1.mp4" type="video/mp4">
+                </video>
+                <p>'Umpah Umpah' MBC Fan Cam</p>
+                <video width="216" height="384" controls>
+                    <source src="Assets\JoyFancam2.mp4" type="video/mp4">
+                </video>
+                <p>'Butterflies' WNC Fan Cam</p>
+                <video width="384" height="216" controls>
+                    <source src="Assets\JoyFancam3.mp4" type="video/mp4">
+                </video>
+                <p>'Sunny Side Up' SBS Fan Cam</p>
+                <video width="384" height="216" controls>
+                    <source src="Assets\JoyFancam4.mp4" type="video/mp4">
+                </video>
+                <p>'Hush' Cover KBS Fan Cam</p>
+                <video width="384" height="216" controls>
+                    <source src="Assets\JoyFancam5.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+
+</body>
+<script>
+    // Get the modal
+    var modal1 = document.getElementById("modal1");
+
+    // Get the modal
+    var modal2 = document.getElementById("modal2");
+
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("button1");
+
+    // Get the button that opens the modal
+    var btn2 = document.getElementById("button2");
+    
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("close1")[0];
+    
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("close2")[0];
+
+    // When the user clicks the button, open the modal 
+    btn1.onclick = function() {
+        modal1.style.display = "block";
+    }
+    
+    btn2.onclick = function() {
+        modal2.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function() {
+        modal1.style.display = "none";
+    }
+    
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script></html>  
